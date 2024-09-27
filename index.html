@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="Mesiter">
@@ -15,36 +15,117 @@
         <div class="meister-content">
             <div class="meister-profiles">
                 <div class="meister-profile">
-                    <a href="#modal1" class="modal-trigger">
+                    <a href="#gropius" class="modal-trigger">
                         <img src="img/meister_gropius.jpg" /alt="">
                     </a>
+                    <p>Walter Gropius</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_itten.jpg" /alt="">
+                    <a href="#itten" class="modal-trigger">
+                        <img src="img/meister_itten.jpg" /alt="">
+                    </a>
+                    <p>Johannes Itten</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_kandinsky.jpg" /alt="">
+                    <a href="#kandinsky" class="modal-trigger">
+                        <img src="img/meister_kandinsky.jpg" /alt="">
+                    </a>
+                    <p>Wassily Kandinsky</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_klee.jpg" /alt="">
+                    <a href="#klee" class="modal-trigger">
+                        <img src="img/meister_klee.jpg" /alt="">
+                    </a>
+                    <p>Paul Klee</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_moholy-nagy.jpeg" /alt="">
+                    <a href="#moholy-nagy" class="modal-trigger">
+                        <img src="img/meister_moholy-nagy.jpeg" /alt="">
+                    </a>
+                    <p>László Moholy-Nagy</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_bayer.jpeg" /alt="">
+                    <a href="#bayer" class="modal-trigger">
+                        <img src="img/meister_bayer.jpeg" /alt="">
+                    </a>
+                    <p>Herbert Bayer</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_breuer.png" /alt="">
+                    <a href="#breuer" class="modal-trigger">
+                        <img src="img/meister_breuer.png" /alt="">
+                    </a>
+                    <p>Marcel Breuer</p>
                 </div>
                 <div class="meister-profile">
-                    <img src="img/meister_shlemmer.jpg" /alt="">
+                    <a href="#shlemmer" class="modal-trigger">
+                        <img src="img/meister_shlemmer.jpg" /alt="">
+                    </a>
+                    <p>Oskar Schlemmer</p>
                 </div>
                 <!--  モーダルの中の実装 -->
-                <div id="modal1" class="hidden-content">
-                    <img src="img/meister_gropius.jpg" alt="walter gropius">
-                    <p>これは画像1の説明文です。</p>
+                <div id="gropius" class="hidden-content">
+                    <div class="modal-profile-box">
+                        <img src="img/meister_gropius.jpg" class="modal-profile" alt="walter gropius">
+                        <p>Walter Gropius</p>      
+                    </div>
                 </div>
+                <div id="itten" class="hidden-content">
+                    <div class="modal-profile-box">
+                        <img src="img/meister_itten.jpg" class="modal-profile" alt="johannes itten">
+                        <p>Johannes Itten</p>
+                    </div>
+                </div>
+                <div id="kandinsky" class="hidden-content">
+                    <div class="modal-wrapper">
+                        <div class="modal-profile-box">
+                            <img src="img/meister_kandinsky.jpg" class="modal-profile" alt="wassily kandinsky">
+                            <p>Wassily Kandinsky</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="klee" class="hidden-content">
+                    <div class="modal-wrapper">
+                        <div class="modal-profile-box">
+                            <img src="img/meister_klee.jpg" class="modal-profile" alt="paul klee">
+                            <p>Paul Klee</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="moholy-nagy" class="hidden-content">
+                    <div class="modal-wrapper">
+                        <div class="modal-profile-box">
+                            <img src="img/meister_moholy-nagy.jpeg" class="modal-profile" alt="moholy-nagy">
+                            <p>László Moholy-Nagy</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="bayer" class="hidden-content">
+                    <div class="modal-wrapper">
+                        <div class="modal-profile-box">
+                            <img src="img/meister_bayer.jpeg" class="modal-profile" alt="bayer">
+                            <p>Herbert Bayer</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="breuer" class="hidden-content">
+                    <div class="modal-wrapper">
+                        <div class="modal-profile-box">
+                            <img src="img/meister_breuer.png" class="modal-profile" alt="breuer">
+                            <p>Marcel Breuer</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="shlemmer" class="hidden-content">
+                    <div class="modal-wrapper">
+                        <div class="modal-profile-box">
+                            <img src="img/meister_shlemmer.jpg" class="modal-profile" alt="shlemmer">
+                            <p>Oskar Schlemmer</p>
+                        </div>
+                        <div>
+                            <p>hahaha</p>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </section>
@@ -76,7 +157,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
         <script src="colorTheory.js"></script>
-        <script src="script2.js"></script>
+        <script src="script.js"></script>
     </section>
 </body>
 </html>
