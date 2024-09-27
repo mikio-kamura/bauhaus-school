@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAUHAUS SCHOOL - EDUCATION</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <section id="Mesiter">
+        <h1 class="section-title meister">MEISTERS</h1>
+        <div class="meister-content">
+            <div class="meister-profiles">
+                <div class="meister-profile">
+                    <a href="#modal1" class="modal-trigger">
+                        <img src="img/meister_gropius.jpg" /alt="">
+                    </a>
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_itten.jpg" /alt="">
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_kandinsky.jpg" /alt="">
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_klee.jpg" /alt="">
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_moholy-nagy.jpeg" /alt="">
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_bayer.jpeg" /alt="">
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_breuer.png" /alt="">
+                </div>
+                <div class="meister-profile">
+                    <img src="img/meister_shlemmer.jpg" /alt="">
+                </div>
+                <!--  モーダルの中の実装 -->
+                <div id="modal1" class="hidden-content">
+                    <img src="img/meister_gropius.jpg" alt="walter gropius">
+                    <p>これは画像1の説明文です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Education">
+        <h1 class="section-title education">EDUCATION</h1>
+        <div class="tabs">
+            <div class="tab active" data-tab="color">Color Theory</div>
+            <div class="tab" data-tab="composition">Composition Theory</div>
+            <div class="tab" data-tab="spatial">Spatial Theory</div>
+        </div>
+        <div id="color" class="education-content active">
+            <h2>Color Theory - ヨハネス・イッテンの色彩対比</h2>
+            <p>以下の色彩対比の例をご覧ください。ボタンをクリックして異なる対比を体験できます。</p>
+            <div id="color-theory-sketch"></div>
+            <div id="color-theory-controls">
+                <button id="simultaneous-contrast">同時対比</button>
+                <button id="complementary-contrast">補色対比</button>
+            </div>
+            <p id="color-explanation"></p>
+        </div>
+        <div id="composition" class="education-content">
+            <h2>Composition Theory</h2>
+            <p>Coming soon...</p>
+        </div>
+        <div id="spatial" class="education-content">
+            <h2>Spatial Theory</h2>
+            <p>Coming soon...</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+        <script src="colorTheory.js"></script>
+        <script src="script2.js"></script>
+    </section>
+</body>
+</html>
