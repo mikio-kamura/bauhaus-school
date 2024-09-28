@@ -14,6 +14,10 @@ body {
     padding: 20px;
 }
 
+.hidden-content {
+    display: none;
+}
+
 .section-title {
     font-weight: bold;
     text-align: center;
@@ -22,8 +26,65 @@ body {
     margin-bottom: 0px; 
 }
 
-.hidden-content {
-    display: none;
+/* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
+/* ~~~~~~~~~~ curriculum section ~~~~~~~~~~ */
+.curriculum {
+    background-color: #BA2A2A;
+}
+
+.curriculum-content {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-bottom: 0px;
+    height: 450px;
+}
+
+.curriculum-content img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+}
+.curriculum-content img:nth-child(1) { z-index: 1; }
+.curriculum-content img:nth-child(2) { z-index: 2; }
+.curriculum-content img:nth-child(3) { z-index: 3; }
+.curriculum-content img:nth-child(4) { z-index: 4; }
+
+/* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
+/* ~~~~~~~~~~ history section ~~~~~~~~~~ */
+.history {
+    background-color: #0059AA;
+}
+
+.history-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-bottom: 0px;
+}
+
+.history-content p {
+    margin-bottom: 10px;
+    /* font-family: "Zen Kaku Gothic New", sans-serif; */
+    /* font-weight: 350; */
+    font-style: normal;
+    font-size: 16px;
+}
+
+/* ~~~~~~~~~~ ---------------- ~~~~~~~~~~ */
+/* ~~~~~~~~~~ meisters section ~~~~~~~~~~ */
+.meister {
+    background-color: #575757;
+}
+
+.meister-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    /* height: 450px; Color Theoryの高さに合わせて調整 */
+    margin-bottom: 0px;
 }
 
 .modal-wrapper {
@@ -46,18 +107,6 @@ body {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     margin: 10px;
-}
-
-.meister {
-    background-color: #DFAA35;
-}
-
-.meister-content {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-    /* height: 450px; Color Theoryの高さに合わせて調整 */
-    margin-bottom: 0px;
 }
 
 .meister-profiles {
@@ -85,8 +134,10 @@ body {
     font-size: 0.8em;
 }
 
+/* ~~~~~~~~~~ ----------------- ~~~~~~~~~~ */
+/* ~~~~~~~~~~ education section ~~~~~~~~~~ */
 .education {
-    background-color: #575757;
+    background-color: #DFAA35;
 }
 
 h2 {

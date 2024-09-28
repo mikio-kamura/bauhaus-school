@@ -10,6 +10,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section id="curriculum">
+        <h1 class="section-title curriculum">CURRICULUM</h1>
+        <div class="curriculum-content">
+            <img src="img/curriculum_pre.png" alt="">
+            <img src="img/curriculum_theory.png" alt="">
+            <img src="img/curriculum_material.png" alt="">
+            <img src="img/curriculum_construction.png" alt="">
+        </div> 
+    </section>
+    <section id="History">
+        <h1 class="section-title history">HISTORY</h1>
+        <div class="history-content">
+            <p>アーツ＆クラフツ運動は、手仕事の価値を再発見しました。アール・ヌーヴォーは、自然の曲線をデザインに取り入れます。ロシア構成主義は、機械時代の機能美を追求し、アールデコは装飾とモダンを融合させました。</p>
+            <p>バウハウスは、これらの流れに響きながら、機能と美の新しい基準を生み出しました。それが、現代デザインの原点です。</p>    
+        </div>
+    </section>
+    <section id="Education">
+        <h1 class="section-title education">EDUCATION</h1>
+        <div class="tabs">
+            <div class="tab active" data-tab="color">Color Theory</div>
+            <div class="tab" data-tab="composition">Composition Theory</div>
+            <div class="tab" data-tab="spatial">Spatial Theory</div>
+        </div>
+        <div id="color" class="education-content active">
+            <h2>ヨハネス・イッテンの色彩対比</h2>
+            <p>以下の色彩対比の例をご覧ください。ボタンをクリックして異なる対比を体験できます。</p>
+            <div id="color-theory-sketch"></div>
+            <div id="color-theory-controls">
+                <!-- <button id="simultaneous-contrast">同時対比</button> -->
+                <!-- <button id="complementary-contrast">補色対比</button> -->
+            </div>
+            <div id="sketch-container"></div>
+        </div>
+        <div id="composition" class="education-content">
+            <!-- <h2>Composition Theory</h2> -->
+            <p>Coming soon...</p>
+        </div>
+        <div id="spatial" class="education-content">
+            <!-- <h2>Spatial Theory</h2> -->
+            <p>Coming soon...</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+        <script src="colorTheory.js"></script>
+        <script src="script.js"></script>
+    </section>
     <section id="Mesiter">
         <h1 class="section-title meister">MEISTERS</h1>
         <div class="meister-content">
@@ -128,36 +174,6 @@
                 </div> 
             </div>
         </div>
-    </section>
-    <section id="Education">
-        <h1 class="section-title education">EDUCATION</h1>
-        <div class="tabs">
-            <div class="tab active" data-tab="color">Color Theory</div>
-            <div class="tab" data-tab="composition">Composition Theory</div>
-            <div class="tab" data-tab="spatial">Spatial Theory</div>
-        </div>
-        <div id="color" class="education-content active">
-            <h2>Color Theory - ヨハネス・イッテンの色彩対比</h2>
-            <p>以下の色彩対比の例をご覧ください。ボタンをクリックして異なる対比を体験できます。</p>
-            <div id="color-theory-sketch"></div>
-            <div id="color-theory-controls">
-                <button id="simultaneous-contrast">同時対比</button>
-                <button id="complementary-contrast">補色対比</button>
-            </div>
-            <p id="color-explanation"></p>
-        </div>
-        <div id="composition" class="education-content">
-            <h2>Composition Theory</h2>
-            <p>Coming soon...</p>
-        </div>
-        <div id="spatial" class="education-content">
-            <h2>Spatial Theory</h2>
-            <p>Coming soon...</p>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
-        <script src="colorTheory.js"></script>
-        <script src="script.js"></script>
     </section>
 </body>
 </html>
