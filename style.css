@@ -9,7 +9,7 @@ body {
     font-family: 'Futura', 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -27,23 +27,71 @@ body {
 }
 
 /* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
+/* ~~~~~~~~~~ first view ~~~~~~~~~~ */
+.first-view {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.first-view img {
+    width: 100%;
+}
+
+/* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
+/* ~~~~~~~~~~ what is bauhaus ~~~~~~~~~~ */
+.what-is-bauhaus-content {
+    position: relative;
+    padding: 0 50px;
+    border: 1px solid #ccc;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+}
+
+.what-is-bauhaus-content h1 {
+    color: black;
+    font-size: 40px;
+}
+
+.big {
+    font-size: 126px;
+    padding: 0;
+    line-height: 100px;
+    background: transparent;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+/* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
 /* ~~~~~~~~~~ curriculum section ~~~~~~~~~~ */
 .curriculum {
+    margin-top: 0px;
     background-color: #BA2A2A;
 }
 
 .curriculum-content {
     position: relative;
-    padding: 20px;
+    padding: 0px 50px;
     border: 1px solid #ccc;
     border-top: none;
     margin-bottom: 0px;
-    height: 450px;
+    height: 630px;
+    overflow-x: hidden;
+}
+
+.curriculum-figure {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin-top: 25px;
 }
 
 .curriculum-content img {
     position: absolute;
-    width: 50%;
+    width: 450px;
     height: auto;
     background-color: transparent;
 }
@@ -59,7 +107,7 @@ body {
 }
 
 .history-content {
-    padding: 20px;
+    padding: 0px 50px;
     border: 1px solid #ccc;
     border-top: none;
     margin-bottom: 0px;
