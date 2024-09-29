@@ -194,8 +194,18 @@ p {
     padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
-    height: 800px; /* Color Theoryの高さに合わせて調整 */
+    height: 1000px; /* Color Theoryの高さに合わせて調整 */
     width: 100%;
+}
+
+.subtitle {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.subsubtitle {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .theory-content img {
@@ -205,6 +215,22 @@ p {
 .color-wheel-content {
     display: flex;
     width: 100%;
+    margin-bottom: 30px;
+}
+
+.color-wheel-container {
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+}
+
+.color-wheel-container img {
+    width: 70%;
+
+}
+
+.color-wheel-content p {
+    padding-right: 30px;
 }
 
 .color-constraction {
@@ -246,19 +272,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100%; */
 }
 
-#color-theory-controls {
-    margin-top: 20px;
+.color-demo {
+    margin: 20px;
 }
 
-#color-theory-controls button {
-    margin-right: 10px;
-    padding: 5px 10px;
-}
-
-#color-theory-sketch {
-    display: flex;
-    justify-content: center;
+.demo-explanation {
+    margin: 20px;
 }
