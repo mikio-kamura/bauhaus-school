@@ -53,21 +53,41 @@
             <div class="tab" data-tab="composition">Composition Theory</div>
             <div class="tab" data-tab="spatial">Spatial Theory</div>
         </div>
-        <div id="color" class="education-content active">
-            <h2>ヨハネス・イッテンの色彩対比</h2>
-            <p>以下の色彩対比の例をご覧ください。ボタンをクリックして異なる対比を体験できます。</p>
-            <div id="color-theory-sketch"></div>
-            <div id="color-theory-controls">
-                <!-- <button id="simultaneous-contrast">同時対比</button> -->
-                <!-- <button id="complementary-contrast">補色対比</button> -->
+        <div id="color" class="theory-content active">
+            <h2>ヨハネス・イッテンの色彩理論</h2>
+            <div class="color-wheel-content">
+                <img src="img/color-wa.png" alt="">
+                <div>
+                    <h2>色相環</h2>
+                    <p>イッテンは、色彩を体系的に理解するために「色相環」を提唱しました。色相環は、色の色相を円状に配置したもので、補色や調和の関係を視覚的に捉えやすくします。<br>
+                        補色関係（対角線にある色同士）が、混ざるとグレーになるように配置されていることを特徴としました。</p>
+                </div>
             </div>
-            <div id="sketch-container"></div>
+            <div class="color-constraction">
+                <div>
+                    <div id="sketch-container"></div>
+                    <div id="color-theory-sketch"></div>
+                    <div id="color-theory-controls">
+                        <!-- <button id="simultaneous-contrast">同時対比</button> -->
+                        <!-- <button id="complementary-contrast">補色対比</button> -->
+                    </div>
+                </div>
+                <div>
+                    <h2>色相の対比</h2>
+                    <p>イッテンは、色の対比を7つの対比に分類しました。<br>
+                        ①色相 ②明度 ③彩度 ④補色 ⑤同時 ⑥面積 ⑦色温度</p>
+                        <p>左のデモでは、⑤同時対比、④補色対比の効果を試せます。</p>
+                        <p>⑤人間の眼が持つ色を補正、補填する特質によって、例えばレッドの中のグレイは緑がかったグレイに見え、グリーンの中のグレイは赤みがかったグレイに見えます。</p>
+                        <p>④補色はお互いを強調し合い、並べると鮮やかさやコントラストが際立ちます。視覚的なインパクトを強くしたいときに使われます。</p>
+                </div>
+
+            </div>
         </div>
-        <div id="composition" class="education-content">
+        <div id="composition" class="theory-content">
             <!-- <h2>Composition Theory</h2> -->
             <p>Coming soon...</p>
         </div>
-        <div id="spatial" class="education-content">
+        <div id="spatial" class="theory-content">
             <!-- <h2>Spatial Theory</h2> -->
             <p>Coming soon...</p>
         </div>
@@ -194,6 +214,9 @@
                 </div> 
             </div>
         </div>
+    </section>
+    <section id="Reference">
+        <div class=""></div>
     </section>
 </body>
 </html>

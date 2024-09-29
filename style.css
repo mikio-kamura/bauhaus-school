@@ -95,6 +95,7 @@ p {
     height: auto;
     background-color: transparent;
 }
+
 .curriculum-content img:nth-child(1) { z-index: 1; }
 .curriculum-content img:nth-child(2) { z-index: 2; }
 .curriculum-content img:nth-child(3) { z-index: 3; }
@@ -188,6 +189,29 @@ p {
     background-color: #DFAA35;
 }
 
+.theory-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 800px; /* Color Theoryの高さに合わせて調整 */
+    width: 100%;
+}
+
+.theory-content img {
+    width: 300px;
+}
+
+.color-wheel-content {
+    display: flex;
+    width: 100%;
+}
+
+.color-constraction {
+    display: flex;
+    width: 100%;
+}
+
 h2 {
     font-weight: bold;
 }
@@ -212,15 +236,6 @@ h2 {
     background-color: #fafafa;
     border-bottom: 1px solid #fafafa;
     margin-bottom: -1px;
-}
-
-.education-content {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-top: none;
-    height: 450px; /* Color Theoryの高さに合わせて調整 */
-    /* overflow-y: auto; */
 }
 
 .content.active {

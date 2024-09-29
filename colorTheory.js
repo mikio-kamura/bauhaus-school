@@ -4,7 +4,7 @@ let sketch = function(p) {
     const neutralGray = 128;
 
     p.setup = function() {
-        let canvas = p.createCanvas(600, 300);
+        let canvas = p.createCanvas(480, 240);
         canvas.parent('sketch-container');
         selectedColor = p.color(200, 100, 50);
         
@@ -20,19 +20,19 @@ let sketch = function(p) {
         // 左側の大きな正方形（選択した色）
         p.fill(complementaryColor(selectedColor));
         p.noStroke();
-        p.rect(0, 0, 300, 300);
+        p.rect(0, 0, 240, 240);
         
         // 左側の小さな正方形（ニュートラルグレイ）
         p.fill(neutralGray);
-        p.rect(100, 100, 100, 100);
+        p.rect(80, 80, 80, 80);
         
         // 右側の大きな正方形（補色）
         p.fill(selectedColor);
-        p.rect(300, 0, 300, 300);
+        p.rect(240, 0, 240, 240);
         
         // 右側の小さな正方形（ニュートラルグレイ）
         p.fill(neutralGray);
-        p.rect(400, 100, 100, 100);
+        p.rect(320, 80, 80, 80);
     };
 
     function updateColor() {

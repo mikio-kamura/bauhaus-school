@@ -2,7 +2,7 @@ $(document).ready(function() {
     // タブ切り替え機能
     $('.tab').click(function() {
         $('.tab').removeClass('active');
-        $('.education-content').removeClass('active').hide(); //これによって、activeではなくなる時に、コンテンツを消せる
+        $('.theory-content').removeClass('active').hide(); //これによって、activeではなくなる時に、コンテンツを消せる
         $(this).addClass('active'); // thisっていうのが
         $('#' + $(this).data('tab')).addClass('active').show();
     });
