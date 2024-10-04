@@ -224,11 +224,6 @@ p {
     min-width: 400px;
 }
 
-.color-wheel-container img {
-    width: 70%;
-
-}
-
 .color-wheel-content p {
     padding-right: 30px;
 }
@@ -280,4 +275,21 @@ h2 {
 
 .demo-explanation {
     margin: 20px;
+}
+
+@media(max-width: 768px){
+
+    /* education */
+    .color-wheel-content {
+        flex-direction: column;
+    }
+
+    .color-constraction {
+        flex-direction: column;
+    }
+    
+    .theory-content {
+        height: 1400px;
+    }
+
 }
