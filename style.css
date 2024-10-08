@@ -278,6 +278,22 @@ h2 {
 }
 
 @media(max-width: 768px){
+    
+    
+    /* curriculum */
+    .curriculum-content img {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        background-color: transparent;
+    }
+
+    .curriculum-figure {
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        margin: 25px 0;
+    }
 
     /* education */
     .color-wheel-content {
@@ -292,4 +308,14 @@ h2 {
         height: 1400px;
     }
 
+    .theory-content img {
+        width: 200px;
+    }
+
+}
+
+@media(max-width: 428px) {
+    .theory-content {
+        height: 1800px;
+    }
 }
