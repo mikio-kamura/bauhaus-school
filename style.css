@@ -23,7 +23,7 @@ body {
     text-align: center;
     color: white;
     padding: 10px;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 
 /* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
@@ -96,10 +96,21 @@ p {
     background-color: transparent;
 }
 
-.curriculum-content img:nth-child(1) { z-index: 1; }
-.curriculum-content img:nth-child(2) { z-index: 2; }
-.curriculum-content img:nth-child(3) { z-index: 3; }
-.curriculum-content img:nth-child(4) { z-index: 4; }
+.curriculum-content img:nth-child(1) {
+    z-index: 1;
+}
+
+.curriculum-content img:nth-child(2) {
+    z-index: 2;
+}
+
+.curriculum-content img:nth-child(3) {
+    z-index: 3;
+}
+
+.curriculum-content img:nth-child(4) {
+    z-index: 4;
+}
 
 /* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
 /* ~~~~~~~~~~ history section ~~~~~~~~~~ */
@@ -108,7 +119,7 @@ p {
 }
 
 .history-content {
-    padding: 0px 50px;
+    padding: 80px 50px;
     border: 1px solid #ccc;
     border-top: none;
     margin-bottom: 0px;
@@ -194,7 +205,6 @@ p {
     padding: 20px;
     border: 1px solid #ccc;
     border-top: none;
-    height: 1000px; /* Color Theoryの高さに合わせて調整 */
     width: 100%;
 }
 
@@ -263,10 +273,31 @@ h2 {
     display: block;
 }
 
-#composition, #spatial {
+#spatial {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.composition-intro {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.composition-demo-section {
+    display: flex;
+    width: 100%;
+}
+
+.composition-demo-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 650px;
+}
+
+.composition-demo {
+    margin: 20px;
 }
 
 .color-demo {
@@ -277,9 +308,9 @@ h2 {
     margin: 20px;
 }
 
-@media(max-width: 768px){
-    
-    
+@media(max-width: 768px) {
+
+
     /* curriculum */
     .curriculum-content img {
         position: absolute;
@@ -303,19 +334,17 @@ h2 {
     .color-constraction {
         flex-direction: column;
     }
-    
-    .theory-content {
-        height: 1400px;
+
+    .composition-demo-section {
+        flex-direction: column;
+    }
+
+    .composition-demo-container {
+        min-width: 100%;
     }
 
     .theory-content img {
         width: 200px;
     }
 
-}
-
-@media(max-width: 428px) {
-    .theory-content {
-        height: 1800px;
-    }
 }

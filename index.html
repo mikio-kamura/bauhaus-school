@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="first-view">
         <img src="img/first-view.png" alt="">
@@ -37,13 +39,13 @@
                 <img src="img/curriculum_construction.png" alt="">
             </div>
             <p>バウハウスのカリキュラムは、円環の図で示されます。中心に「建築」が据えられ、その周囲に素材の理解と形態の探求が広がります。実践を通じた学びが、自然に展開される構造です。</p>
-        </div> 
+        </div>
     </section>
     <section id="History">
         <h1 class="section-title history">HISTORY</h1>
         <div class="history-content">
             <p>アーツ＆クラフツ運動は、手仕事の価値を再発見しました。アール・ヌーヴォーは、自然の曲線をデザインに取り入れます。ロシア構成主義は、機械時代の機能美を追求し、アールデコは装飾とモダンを融合させました。</p>
-            <p>バウハウスは、これらの流れに響きながら、機能と美の新しい基準を生み出しました。それが、現代デザインの原点です。</p>    
+            <p>バウハウスは、これらの流れに響きながら、機能と美の新しい基準を生み出しました。それが、現代デザインの原点です。</p>
         </div>
     </section>
     <section id="Education">
@@ -75,16 +77,32 @@
                     <h2 class="subsubtitle">色相の対比</h2>
                     <p>イッテンは、色の対比を7つの対比に分類しました。<br>
                         ①色相 ②明度 ③彩度 ④補色 ⑤同時 ⑥面積 ⑦色温度</p>
-                        <p>左のデモでは、⑤同時対比、④補色対比の効果を試せます。</p>
-                        <p>⑤人間の眼が持つ色を補正、補填する特質によって、例えばレッドの中のグレイは緑がかったグレイに見え、グリーンの中のグレイは赤みがかったグレイに見えます。</p>
-                        <p>④補色はお互いを強調し合い、並べると鮮やかさやコントラストが際立ちます。視覚的なインパクトを強くしたいときに使われます。</p>
+                    <p>左のデモでは、⑤同時対比、④補色対比の効果を試せます。</p>
+                    <p>⑤人間の眼が持つ色を補正、補填する特質によって、例えばレッドの中のグレイは緑がかったグレイに見え、グリーンの中のグレイは赤みがかったグレイに見えます。</p>
+                    <p>④補色はお互いを強調し合い、並べると鮮やかさやコントラストが際立ちます。視覚的なインパクトを強くしたいときに使われます。</p>
                 </div>
 
             </div>
         </div>
         <div id="composition" class="theory-content">
-            <!-- <h2>Composition Theory</h2> -->
-            <p>Coming soon...</p>
+            <h2 class="subtitle">ワシリー・カンディンスキーの構成理論</h2>
+            <div class="composition-intro">
+                <p>WIP AI</p>
+                <p>カンディンスキーは、抽象芸術の基礎を築いたバウハウスの教師です。彼は「点・線・面」という基本要素から構成を分析し、視覚的なリズムとバランスを追求しました。<br>
+                    点は静止、線は動き、面は空間を表現します。これらの要素の配置と関係性が、作品の調和と緊張を生み出します。</p>
+            </div>
+            <div class="demo-explanation">
+                <p>実際に、点・線・面を構成してみましょう。</p>
+                <div class="composition-demo-section">
+                    <div class="composition-demo-container">
+                        <div id="composition-sketch-container" class="composition-demo"></div>
+                    </div>
+                </div>
+                <p><strong>点</strong>：クリックで点を配置できます。ドラッグして移動することもできます。点は構成の最小単位であり、視線の焦点となります。</p>
+                <p><strong>線</strong>：ドラッグして線を描画できます。線は方向性と動きを表現し、空間を分割します。</p>
+                <p><strong>面</strong>：円・正方形・三角形から選択して配置できます。面は空間を占め、バランスとリズムを生み出します。</p>
+                <p>これらの要素を組み合わせることで、バランス、リズム、対比などの構成原理を体験できます。</p>
+            </div>
         </div>
         <div id="spatial" class="theory-content">
             <!-- <h2>Spatial Theory</h2> -->
@@ -93,6 +111,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
         <script src="colorTheory.js"></script>
+        <script src="compositionTheory.js"></script>
         <script src="script.js"></script>
     </section>
     <section id="Mesiter">
@@ -151,7 +170,7 @@
                 <div id="gropius" class="hidden-content">
                     <div class="modal-profile-box">
                         <img src="img/meister_gropius.jpg" class="modal-profile" alt="walter gropius">
-                        <p>Walter Gropius</p>      
+                        <p>Walter Gropius</p>
                     </div>
                 </div>
                 <div id="itten" class="hidden-content">
@@ -210,7 +229,7 @@
                             <p>hahaha</p>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -218,4 +237,5 @@
         <div class=""></div>
     </section>
 </body>
+
 </html>
