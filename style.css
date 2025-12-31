@@ -273,10 +273,25 @@ h2 {
     display: block;
 }
 
-#spatial {
+.spatial-intro {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.spatial-demo-section {
+    display: flex;
+    width: 100%;
+}
+
+.spatial-demo-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    min-width: 650px;
+}
+
+.spatial-demo {
+    margin: 20px;
 }
 
 .composition-intro {
@@ -340,6 +355,10 @@ h2 {
     }
 
     .composition-demo-container {
+        min-width: 100%;
+    }
+
+    .spatial-demo-container {
         min-width: 100%;
     }
 
