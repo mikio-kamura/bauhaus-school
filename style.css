@@ -149,24 +149,56 @@ p {
 
 .modal-wrapper {
     display: flex;
+    gap: 30px;
+    padding: 20px;
 }
 
 .modal-profile-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    min-width: 200px;
+    flex-shrink: 0;
 }
 
 .modal-profile-box p {
     margin: 10px 0;
 }
 
+.meister-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
 .modal-profile {
-    width: 40%;
+    width: 200px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     margin: 10px;
+}
+
+.modal-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.modal-info h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-info h3:first-child {
+    margin-top: 0;
+}
+
+.modal-info p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555;
 }
 
 .meister-profiles {
@@ -364,6 +396,24 @@ h2 {
 
     .theory-content img {
         width: 200px;
+    }
+
+    /* meisters modal */
+    .modal-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .modal-profile-box {
+        width: 100%;
+    }
+
+    .modal-profile {
+        width: 150px;
+    }
+
+    .modal-info {
+        padding: 10px 0;
     }
 
 }
