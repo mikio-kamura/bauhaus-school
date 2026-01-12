@@ -35,6 +35,17 @@ body {
 
 .first-view img {
     width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.first-view canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
 /* ~~~~~~~~~~ --------------- ~~~~~~~~~~ */
